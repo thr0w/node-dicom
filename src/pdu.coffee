@@ -199,6 +199,7 @@ class PDUAssociateRq extends PDU
     return super(json)
 
 class PDUAssociateAc extends PDUAssociateRq
+  name: 'association_ac'
 
 class Item extends PDU
   _json_name: false
@@ -505,7 +506,7 @@ mk_uint32 = (num) ->
 exports.PDUDecoder = PDUDecoder
 exports.PDUEncoder = PDUEncoder
 exports.PDUAssociateRq = PDUAssociateRq
-
+exports.PDUAssociateAc = PDUAssociateAc
 
 
 net = require 'net'
